@@ -1,0 +1,32 @@
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+.logo {
+  width: 100px;
+}
+
+.logo,
+nav,
+nav li {
+  display: inline-block;
+  vertical-align: middle;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+section {
+  background-color: #0020f4;
+}
