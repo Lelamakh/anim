@@ -9,6 +9,10 @@ a {
 ul {
   list-style: none;
 }
+button {
+  border: none;
+  background: none;
+}
 img {
   width: 100%;
 }
@@ -29,4 +33,34 @@ header {
 }
 section {
   background-color: #0020f4;
+  padding-top: 200px;
+  padding-bottom: 65px;
+}
+.img-wrapper img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.img-wrapper img:first-child {
+  max-width: 707px;
+  width: 100%;
+  margin-right: 25px;
+}
+.img-wrapper img:nth-child(2) {
+  max-width: 948px;
+  width: 100%;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.dot.active {
+  opacity: 1;
+}
+.slider-pagination > div {
+  display: inline-block;
+  vertical-align: middle;
 }
