@@ -9,6 +9,11 @@ a {
 ul {
   list-style: none;
 }
+.container {
+  max-width: 1775px;
+  width: 100%;
+  margin: 0 auto;
+}
 button {
   border: none;
   background: none;
@@ -31,7 +36,7 @@ header {
   top: 0;
   left: 0;
 }
-section {
+.slider-section {
   background-color: #0020f4;
   padding-top: 200px;
   padding-bottom: 65px;
@@ -65,7 +70,20 @@ section {
   vertical-align: middle;
 }
 .project-section {
-  background-color: blue;
+  margin-top: 394px;
+  padding: 70px 0px;
+  position: relative;
+}
+.project-section::before {
+  content: "";
+  width: 100%;
+  height: 308px;
+  display: block;
+  background-color: #0020f4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .slider-box {
   max-width: 463px;
@@ -80,6 +98,7 @@ section {
   height: 100%;
   object-fit: cover;
 }
+
 .slider-box p {
   position: absolute;
   bottom: 10px;
@@ -90,4 +109,40 @@ section {
   opacity: 1;
   backdrop-filter: blur(10px);
   width: calc(100%-20%);
+}
+.item {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 463px;
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background-color: red;
+  background-image: url("../img/rec4.png");
+  background-blend-mode: luminosity;
+  transition-property: background-blend-mode;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.item:hover {
+  background-blend-mode: color-burn;
+}
+.item:hover p {
+  color: white;
+  background-color: black;
+}
+.item p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 28px 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  width: calc(100%-20%);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: o.5s;
 }
